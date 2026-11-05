@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Costa Suportes | Tecnologia e infraestrutura em São Carlos - SP</title>
+<meta name="description" content="Manutenção e limpeza de computadores, formatação, troca de HD por SSD, automação de WhatsApp e suporte em São Carlos - SP. Empresas e residências. Chame no WhatsApp: (16) 99148-6026.">
+<meta name="theme-color" content="#123F6B">
+<meta property="og:title" content="Costa Suportes | Tecnologia e infraestrutura">
+<meta property="og:description" content="Suporte rápido e eficiente para empresas e residências em São Carlos - SP.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Costa Suportes",
+  "description": "Tecnologia e infraestrutura: manutenção, limpeza e formatação de computadores, automação de WhatsApp e suporte.",
+  "telephone": "+55-16-99148-6026",
+  "email": "costasuportes@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "São Carlos", "addressRegion": "SP", "addressCountry": "BR" },
+  "areaServed": "São Carlos - SP",
+  "sameAs": ["https://www.instagram.com/costasuportes"]
+}
+</script>
+<style>
+  :root{
+    --azul:#123F6B;
+    --laranja:#F58220;
+    --branco:#FFFFFF;
+    --cinza:#5F6B7A;
+    --fundo-suave:#F4F7FA;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Lato',system-ui,sans-serif;color:var(--azul);background:var(--branco);line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'Montserrat',system-ui,sans-serif;line-height:1.2}
+  a{color:inherit}
+  .wrap{width:100%;max-width:1040px;margin:0 auto;padding:0 20px}
+
+  /* Cabeçalho */
+  header{position:sticky;top:0;z-index:20;background:var(--branco);border-bottom:1px solid #E6ECF2}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .brand img{height:44px;width:auto;display:block}
+  .brand .wordmark{display:none;font-family:'Montserrat',sans-serif;font-weight:800;font-size:19px;color:var(--azul);line-height:1}
+  .brand.sem-logo img{display:none}
+  .brand.sem-logo .wordmark{display:block}
+  .nav-links{display:none;gap:26px;font-weight:700;font-size:15px}
+  .nav-links a{text-decoration:none;color:var(--cinza)}
+  .nav-links a:hover{color:var(--laranja)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:999px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;text-decoration:none;border:2px solid transparent;transition:transform .15s,background .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-laranja{background:var(--laranja);color:var(--branco)}
+  .btn-laranja:hover{background:#e0721a}
+  .btn-contorno{border-color:var(--azul);color:var(--azul)}
+  .btn-sm{padding:10px 18px;font-size:14px}
+
+  /* Hero */
+  .hero{text-align:center;padding:64px 0 56px}
+  .hero .logo-grande{height:120px;width:auto;margin:0 auto 20px;display:block}
+  .hero .logo-grande.oculta{display:none}
+  .traco{width:64px;height:5px;background:var(--laranja);border-radius:3px;margin:0 auto 24px}
+  .hero h1{font-size:clamp(28px,6vw,46px);font-weight:800;max-width:700px;margin:0 auto 14px}
+  .hero p.sub{color:var(--cinza);font-size:18px;max-width:560px;margin:0 auto 30px}
+  .hero .acoes{display:flex;flex-direction:column;gap:12px;align-items:center}
+  .tags{margin-top:34px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:12px;letter-spacing:.12em;color:var(--cinza)}
+  .faixa{height:8px;background:var(--azul)}
+
+  /* Seções */
+  section{padding:64px 0}
+  .alt{background:var(--fundo-suave)}
+  .titulo{text-align:center;margin-bottom:40px}
+  .titulo h2{font-size:clamp(24px,4.5vw,34px);font-weight:800}
+  .titulo .traco{margin:14px auto 0}
+
+  .grid{display:grid;gap:18px;grid-template-columns:1fr}
+  .card{background:var(--branco);border:1px solid #E6ECF2;border-radius:16px;padding:26px;box-shadow:0 2px 10px rgba(18,63,107,.04)}
+  .card .icone{width:46px;height:46px;border-radius:12px;background:var(--azul);color:var(--branco);display:grid;place-items:center;margin-bottom:16px}
+  .card .icone svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .card .icone.laranja{background:var(--laranja)}
+  .card h3{font-size:18px;margin-bottom:8px}
+  .card p{color:var(--cinza);font-size:15.5px}
+
+  /* Preços */
+  .preco-card{text-align:center;border-top:5px solid var(--laranja)}
+  .preco-card h3{font-size:16px;margin-bottom:12px;min-height:42px}
+  .preco{font-family:'Montserrat',sans-serif;font-weight:800;font-size:38px;color:var(--azul)}
+  .preco small{font-size:18px;font-weight:700;color:var(--laranja);margin-right:2px}
+  .preco-card p{font-size:14px;margin-top:8px}
+  .aviso{margin-top:26px;text-align:center;color:var(--cinza);font-size:14px}
+  .aviso strong{color:var(--azul)}
+
+  /* Por que */
+  .porque{display:grid;gap:22px;grid-template-columns:1fr}
+  .item{display:flex;gap:14px;align-items:flex-start}
+  .item .bolinha{flex:none;width:12px;height:12px;border-radius:50%;background:var(--laranja);margin-top:8px}
+  .item h3{font-size:17px;margin-bottom:2px}
+  .item p{color:var(--cinza);font-size:15.5px}
+
+  /* Contato */
+  .contato{background:var(--azul);color:var(--branco);text-align:center}
+  .contato h2{font-size:clamp(24px,4.5vw,34px);font-weight:800;margin-bottom:10px}
+  .contato p{color:#C9D6E4;max-width:520px;margin:0 auto 28px}
+  .contato .traco{margin-bottom:22px}
+  .canais{display:flex;flex-direction:column;gap:12px;align-items:center}
+  .contato .btn-contorno{border-color:var(--branco);color:var(--branco)}
+  .fone{margin-top:22px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:22px}
+  .local{margin-top:6px;color:#C9D6E4;font-size:15px}
+
+  footer{background:#0E3256;color:#9FB3C8;text-align:center;padding:22px 0;font-size:13.5px}
+
+  /* WhatsApp flutuante */
+  .zap{position:fixed;right:16px;bottom:16px;z-index:30;width:58px;height:58px;border-radius:50%;background:var(--laranja);display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.25);transition:transform .15s}
+  .zap:hover{transform:scale(1.08)}
+  .zap svg{width:30px;height:30px;fill:var(--branco)}
+
+  @media(min-width:700px){
+    .nav-links{display:flex}
+    .hero .acoes{flex-direction:row;justify-content:center}
+    .grid.tres{grid-template-columns:repeat(3,1fr)}
+    .grid.dois{grid-template-columns:repeat(2,1fr)}
+    .grid.quatro{grid-template-columns:repeat(2,1fr)}
+    .porque{grid-template-columns:repeat(2,1fr);gap:28px 40px}
+    .canais{flex-direction:row;justify-content:center}
+  }
+  @media(min-width:960px){
+    .grid.quatro{grid-template-columns:repeat(4,1fr)}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#inicio" class="brand" id="brand">
+      <!-- Coloque o arquivo do seu logo na mesma pasta com o nome logo.png -->
+      <img src="logo.png" alt="Costa Suportes" onerror="document.getElementById('brand').classList.add('sem-logo')">
+      <span class="wordmark">Costa Suportes</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-laranja btn-sm" href="https://wa.me/5516991486026?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Costa%20Suportes." target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <img class="logo-grande" src="logo.png" alt="Costa Suportes - tecnologia e infraestrutura" onerror="this.classList.add('oculta')">
+      <div class="traco"></div>
+      <h1>Tecnologia para o seu dia a dia.</h1>
+      <p class="sub">Suporte rápido e eficiente para empresas e residências em São Carlos - SP.</p>
+      <div class="acoes">
+        <a class="btn btn-laranja" href="https://wa.me/5516991486026?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Costa%20Suportes." target="_blank" rel="noopener">Peça seu orçamento no WhatsApp</a>
+        <a class="btn btn-contorno" href="#servicos">Ver serviços</a>
+      </div>
+      <div class="tags">SUPORTE • MANUTENÇÃO • INFRAESTRUTURA</div>
+    </div>
+  </section>
+  <div class="faixa"></div>
+
+  <section id="servicos">
+    <div class="wrap">
+      <div class="titulo">
+        <h2>Nossos serviços</h2>
+        <div class="traco"></div>
+      </div>
+      <div class="grid quatro">
+        <article class="card">
+          <div class="icone"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+          <h3>Manutenção e limpeza</h3>
+          <p>Limpeza completa de PCs e notebooks, troca de pasta térmica e revisão geral para evitar travamentos e superaquecimento.</p>
+        </article>
+        <article class="card">
+          <div class="icone"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M4 19h16"/></svg></div>
+          <h3>Formatação</h3>
+          <p>Instalação do Windows, pacote Office e ativação, com seus arquivos preservados e o computador pronto para usar.</p>
+        </article>
+        <article class="card">
+          <div class="icone"><svg viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M8 10h.01M8 14h8"/></svg></div>
+          <h3>Troca de HD por SSD</h3>
+          <p>Seu computador antigo ligando em segundos e muito mais rápido no dia a dia.</p>
+        </article>
+        <article class="card">
+          <div class="icone laranja"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.7 7L4 20l1.1-4.9A8 8 0 1 1 21 12z"/><path d="M9 10h6M9 14h4"/></svg></div>
+          <h3>Automação de WhatsApp</h3>
+          <p>Respostas automáticas, menus de atendimento e organização de contatos para a sua empresa atender melhor e vender mais.</p>
+        </article>
+      </div>
+      <div class="grid dois" style="margin-top:18px">
+        <article class="card">
+          <div class="icone"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 18 0"/><rect x="2" y="12" width="4" height="7" rx="1.5"/><rect x="18" y="12" width="4" height="7" rx="1.5"/></svg></div>
+          <h3>Suporte técnico</h3>
+          <p>Ajuda rápida para resolver lentidão, erros, vírus, impressoras, e-mail e o que mais travar a sua rotina.</p>
+        </article>
+        <article class="card">
+          <div class="icone"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v5M12 12l-6 5M12 12l6 5"/></svg></div>
+          <h3>Infraestrutura e redes</h3>
+          <p>Organização de rede, Wi-Fi e estrutura de TI para escritórios e pequenas empresas funcionarem sem dor de cabeça.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="alt" id="diferenciais">
+    <div class="wrap">
+      <div class="titulo">
+        <h2>Por que escolher a Costa Suportes</h2>
+        <div class="traco"></div>
+      </div>
+      <div class="porque">
+        <div class="item"><span class="bolinha"></span><div><h3>Suporte rápido e eficiente</h3><p>Você explica o problema e a gente resolve sem enrolação.</p></div></div>
+        <div class="item"><span class="bolinha"></span><div><h3>Empresas e residências</h3><p>Do computador de casa à estrutura de TI do seu negócio.</p></div></div>
+        <div class="item"><span class="bolinha"></span><div><h3>Atendimento próximo</h3><p>Conversa direta com quem faz o serviço, pelo WhatsApp.</p></div></div>
+        <div class="item"><span class="bolinha"></span><div><h3>Atendimento local</h3><p>Atuamos em São Carlos - SP, com orçamento claro antes de começar.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <div class="wrap">
+      <div class="traco"></div>
+      <h2>Fale com a Costa Suportes</h2>
+      <p>Chame no WhatsApp e peça seu orçamento. Respondemos o quanto antes.</p>
+      <div class="canais">
+        <a class="btn btn-laranja" href="https://wa.me/5516991486026?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Costa%20Suportes." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <a class="btn btn-contorno" href="https://www.instagram.com/costasuportes" target="_blank" rel="noopener">@costasuportes no Instagram</a>
+        <a class="btn btn-contorno" href="mailto:costasuportes@gmail.com">Enviar e-mail</a>
+      </div>
+      <div class="fone">(16) 99148-6026</div>
+      <div class="local"><a href="mailto:costasuportes@gmail.com" style="text-decoration:none">costasuportes@gmail.com</a></div>
+      <div class="local">São Carlos - SP</div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Costa Suportes | Tecnologia e infraestrutura &nbsp;•&nbsp; São Carlos - SP &nbsp;•&nbsp; © <span id="ano">2026</span></div>
+</footer>
+
+<a class="zap" href="https://wa.me/5516991486026?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Costa%20Suportes." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg>
+</a>
+
+<script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</body>
+</html>
